@@ -1,0 +1,23 @@
+{% load static %}
+
+<div class="scroll-up-btn">
+  <i class="fas fa-angle-up"></i>
+</div>
+
+<nav class="navbar" >
+  <div class="max-width">
+    <div class="logo">
+      <a href="#">Portfo<span>lio.</span></a>
+    </div>
+    <ul class="menu">
+      <li><a href="{% url 'HomeView' %}" class="menu-btn">Home</a></li>
+      <li><a href="{% url 'AboutMe' %}" class="menu-btn">About</a></li>
+      <!-- <li><a href="{% url 'projects' %}" class="menu-btn">Projects</a></li> -->
+      <li><a href="{% url 'contact' %}" class="menu-btn">Contact</a></li>
+    </ul>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
