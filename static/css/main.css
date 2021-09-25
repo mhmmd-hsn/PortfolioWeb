@@ -140,7 +140,7 @@ section .title::after {
   cursor: pointer;
   display: none;
 }
-.scroll-up-btn {
+/* .scroll-up-btn {
   position: fixed;
   height: 45px;
   width: 42px;
@@ -166,7 +166,7 @@ section .title::after {
 }
 .scroll-up-btn:hover {
   filter: brightness(90%);
-}
+} */
 .back-red {
   width: 100vw;
   height: 30px;
