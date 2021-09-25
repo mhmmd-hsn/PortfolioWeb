@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render,redirect
-from .models import Skill , Project 
+from .models import Skill , Project ,Tag
 from .forms import MessageForm
 from django.contrib import messages
 # Create your views here.
@@ -8,8 +8,10 @@ from django.contrib import messages
 def HomeView(request):
     skills = Skill.objects.all()
     projects = Project.objects.all()
+    tags = Tag.objects.all()
+    skills = Skill.objects.all()
     
-    context = {'skills':skills , 'projects':projects } 
+    context = {'skills':skills , 'projects':projects ,'tags':tags} 
     return render(request, 'base/home.html', context)
 
 

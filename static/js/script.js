@@ -41,7 +41,7 @@ $(document).ready(function () {
     loop: true,
   });
 
-  var typed = new Typed(".typing-2", {
+  var typed = new Typed(".text .typing-2", {
     strings: ["Developer", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,

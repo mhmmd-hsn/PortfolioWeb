@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(_y&qvwu9mo4dy&j_)q4vo)%5e8ycl-16t(%g_pk5=xc34&t1z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://mmd-hsn.herokuapp.com/','2d29-151-247-76-231.ngrok.io','127.0.0.1']
 
 sys.modules['fontawesome_free'] = __import__('fontawesome-free')
 # Application definition
@@ -136,3 +136,4 @@ STATICFILES_DIRS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

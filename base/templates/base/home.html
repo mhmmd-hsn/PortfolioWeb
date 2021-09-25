@@ -1,87 +1,6 @@
 {% extends 'base/main.html' %} {% load static %} {% block content %}
 
 
-<head>
-    <style>
-/* featured projects section styling */
-/* /* .services,
-.teams {
-  color: white;
-  background: #edeae5;
-}
-.services .max-width .title::before,
-.teams .title::before {
-  background: #026670;
-}
-.services .title::after,
-.teams .title::after {
-  background: #edeae5;
-  content: "what i have done";
-  color: #026670;
-}
-
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  background: #45a29e;
-  text-align: center;
-  border-radius: 6px;
-  padding: 35px 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.services .card .box img {
-  height: 40px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 5%;
-  border: 5px solid #facf36;
-  transition: all 0.3s ease;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.services .serv-content .card:hover {
-   background: #facf36; 
-}
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-.services .serv-content .card i {
-  font-size: 50px;
-  color: #facf36;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i {
-  color: #facf36;
-}
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-.services .title {
-  color: black;
-}
-.services .card .box  .tags--wrapper{
-   display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    align-items: center;
-}
-.services .card .box .tag {
-   background-color: #fef9c7;
-    width: fit-content;
-    padding: 1px 5px;
-    border-radius: 10px;
-    color: #026670;
-}  */
-    </style>
-
-</head>
 
 <!-- home section start -->
 <section class="home" id="home">
@@ -90,17 +9,17 @@
       <div class="text-1">Hi, I'm</div>
       <div class="text-2">Mohammad</div>
       <div class="text-2">Hosseini</div>
-      <div class="text-3">And I'm a <span class="typing" style="  color: #facf36;
+      <div class="text-3">And I'm a junior <span class="typing" style="  color: #FFC300 ;
   font-weight: 500;"></span></div>
       
-      <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"  style="color: #026670;"></i></a>
-      <a href="https://github.com/mhmmd-hsn" target="_blank"><i class="fab fa-github fa-2x" style="color: #026670;"></i></a>
-      <a href="https://t.me/Mhmmd0_0hsn" target="_blank"><i class="fab fa-telegram fa-2x" style="color: #026670;"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"  style="color: #0f292f;"></i></a>
+      <a href="https://github.com/mhmmd-hsn" target="_blank"><i class="fab fa-github fa-2x" style="color: #0f292f;"></i></a>
+      <a href="https://t.me/Mhmmd0_0hsn" target="_blank"><i class="fab fa-telegram fa-2x" style="color: #0f292f;"></i></a>
     </div>
   </div>
 </section>
 
-<!-- services section start -->
+<!-- interests section start -->
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title" >My Interests</h2>
@@ -109,21 +28,21 @@
                     <div class="box">
                         <i class="fas fa-code fa-3x"></i>
                         <div class="text">Web Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-brain fa-3x"></i>
-                        <div class="text">Ai Development</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <p>It's been a while that I have started learning about web development  and try to make  new things, mainly by Django and React.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-user-tie fa-3x"></i>
-                        <div class="text">Business Management</div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                        <div class="text">BusinessAdministration</div>
+                        <p>I often read about business administration daily and I love help teams to improve and achieve their goals in their business.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-brain fa-3x"></i>
+                        <div class="text">ArtificialIntelligence</div>
+                        <p>it's exciting to transform our reality into something that simplifies complex tasks, and helps us to create new products and services.</p>
                     </div>
                 </div>
                </div>
@@ -138,7 +57,15 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <p>my programming journey started with c&c++ at university classes  then I began to learn python on my own and got interested in learning more about different languages and popular frameworks , now I'm experienced with technologies like:</p>
+                    <br>
+                    <div class="skill--wrapper">
+                    {% for tag  in skills%}
+                    <div class="skill--tag">
+                        <span>{{tag}}</span>
+                    </div>
+                    {% endfor %}
+                    </div>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -181,7 +108,7 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="projects">
         <div class="max-width">
             <h2 class="title">Featured Projects</h2>
             <div class="serv-content">
