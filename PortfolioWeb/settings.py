@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(_y&qvwu9mo4dy&j_)q4vo)%5e8ycl-16t(%g_pk5=xc34&t1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://mmd-hsn.herokuapp.com/','2d29-151-247-76-231.ngrok.io','127.0.0.1']
+ALLOWED_HOSTS = ['mmd-hsn.herokuapp.com','2d29-151-247-76-231.ngrok.io','127.0.0.1']
 
 sys.modules['fontawesome_free'] = __import__('fontawesome-free')
 # Application definition
