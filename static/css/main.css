@@ -264,7 +264,7 @@ section .title::after {
 /* skills section styling */
 .skills .title::after {
   content: "what i know";
-  background: #c5c6c7;
+  background: #cccccc;
   color: #1f2833;
 }
 .skills .skills-content .column {
