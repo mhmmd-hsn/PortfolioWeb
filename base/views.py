@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import render,redirect
-from .models import Skill , Project ,Tag
+from .models import Skill , Project ,Tag ,Message
 from .forms import MessageForm
 from django.contrib import messages
 # Create your views here.
@@ -36,3 +36,9 @@ def ProjectView(request):
     projects = Project.objects.all()
     context = {'projects':projects}
     return render(request,'base/projects.html',context)
+
+
+def message_view(request):
+    messages = Message.objects.all()
+    context = {'messages':messages}
+    return render(request,'base/message.html',context)
