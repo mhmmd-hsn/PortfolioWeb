@@ -34,7 +34,6 @@ sys.modules['fontawesome_free'] = __import__('fontawesome-free')
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
